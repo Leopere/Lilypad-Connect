@@ -4,10 +4,9 @@
 FROM frolvlad/alpine-oraclejdk8
 MAINTAINER Chamunks <Chamunks@gmail.com>
 
-RUN mkdir app/ \
-    cd app \
-    wget http://ci.lilypadmc.com/job/Go-Server-Connect/lastSuccessfulBuild/artifact/target/connect-linux-amd64 \
-    chmod +x connect-linux-amd64
+RUN mkdir /app \
+    wget http://ci.lilypadmc.com/job/Go-Server-Connect/lastSuccessfulBuild/artifact/target/connect-linux-amd64 -O /app/connect-linux-amd64 \
+    chmod +x /app/connect-linux-amd64
 
 VOLUME /app/connect.yml
 
