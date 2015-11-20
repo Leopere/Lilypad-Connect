@@ -1,14 +1,14 @@
 connect:
-  image: chamunks/lilypad-connect
+  image: chamunks/lilypad-connect:1.7.10
   expose:
     - "5091"
   volumes:
     - "./connect/connect.yml:/app/connect.yml"
   ## Restart policies can be set to anything from here https://docs.docker.com/v1.8/reference/run/#restart-policies-restart
   restart: always
-  
+
 proxy:
-  image: chamunks/lilypad-proxy
+  image: chamunks/lilypad-proxy:1.7.10
   ports:
     - "25565:25565"
   volumes:
