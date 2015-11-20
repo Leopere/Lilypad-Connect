@@ -1,0 +1,6 @@
+bind: :5091
+logins:
+- username: example
+  password: example
+- regexp: ^example-.*$
+  password: example
