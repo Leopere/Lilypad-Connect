@@ -10,7 +10,7 @@ delete_container (){
 }
 run (){
   docker run -ti \
-    -p 25565:25565 \
+    -p 5091:5091 \
     -v /root/Lilypad-Connect/connect/connect.yml:/app/connect.yml \
     --restart=always \
     --name=lilypad-connect \
