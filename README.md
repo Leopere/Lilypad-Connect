@@ -4,13 +4,13 @@ This will create a Lilypad authentication server.  This is the backbone of a Lil
 
 ## How-To
 
-Run via docker run
+Run via script or read the script for how to launch.
 
-    docker run -d chamuns/GoLilypad-Connect
+    ./connect.sh up
 
-Run via docker-compose.yml
+Obtain help with connect.sh.
 
-    docker-compose up -d
+    ./connect.sh help
 
 You get a bit more control and make less errors launching this container by docker-compose so I suggest you try to install docker-compose and stick to using that over the commands themselves but if you're already confident with using `docker run` and know what you'd like to pass to it argument wise feel free.  The docker volumes all exist within /app/ inside of the container.  
 
