@@ -3,6 +3,7 @@ connect:
   ports:
     - "5091:5091"
   volumes:
+    # Make sure you copy ./connect/connect.yml.example to ./connect/connect.yml and customize accordingly.
     - "./connect/connect.yml:/app/connect.yml"
   ## Restart policies can be set to anything from here https://docs.docker.com/v1.8/reference/run/#restart-policies-restart
   restart: always
