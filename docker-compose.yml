@@ -1,5 +1,5 @@
 connect:
-  image: chamunks/lilypad-connect
+  image: chamunks/lilypad-connect:1.7.10
   ports:
     - "5091:5091"
   volumes:
