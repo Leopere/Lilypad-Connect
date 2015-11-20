@@ -12,5 +12,4 @@ VOLUME /app/connect.yml
 
 EXPOSE 5091
 WORKDIR /app/
-ENTRYPOINT  ["/bin/sh"]
 CMD  ["/app/connect-linux-amd64"]
