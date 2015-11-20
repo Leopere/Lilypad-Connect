@@ -10,4 +10,4 @@ RUN chmod +x /app/connect-linux-amd64
 
 EXPOSE 5091
 WORKDIR /app/
-CMD  ["/app/connect-linux-amd64"]
+ENTRYPOINT  ["/app/connect-linux-amd64"]
