@@ -1,6 +1,6 @@
 #/bin/bash
 latest (){
-  docker pull chamunks/lilypad-connect:1.7.10
+  docker pull chamunks/lilypad-connect:latest
 }
 stop_container (){
   docker stop lilypad-connect
@@ -14,7 +14,7 @@ run (){
     -v /root/Lilypad-Connect/connect/connect.yml:/app/connect.yml \
     --restart=always \
     --name=lilypad-connect \
-    chamunks/lilypad-connect:1.7.10
+    chamunks/lilypad-connect:latest
 }
 
 case $1 in
